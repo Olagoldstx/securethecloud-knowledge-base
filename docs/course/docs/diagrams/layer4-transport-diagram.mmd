@@ -1,0 +1,12 @@
+flowchart TD
+    subgraph Transport Layer
+        A[User Request (TCP 443)]
+        B[Security Group Rule]
+        C[NACL Rule]
+        D[Firewall Rule]
+        E[Application Tier]
+    end
+
+    A --> B --> C --> D --> E
+    E --> F[Database Tier (TCP 3306)]
+    F --> G[Blocked by SG/NACL if not allowed]

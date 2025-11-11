@@ -1,0 +1,16 @@
+flowchart LR
+    subgraph Cloud Environment
+        A[Fiber Optic Cable]
+        B[Virtual NIC (AWS ENI)]
+        C[Virtual NIC (Azure vNIC)]
+        D[Virtual NIC (GCP Interface)]
+    end
+
+    subgraph Physical Layer
+        A --> E[Data Transmission]
+        B --> E
+        C --> E
+        D --> E
+    end
+
+    E --> F[Layer 2 – Data Link]
