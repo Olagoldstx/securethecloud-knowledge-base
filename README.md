@@ -148,6 +148,7 @@ flowchart TB
     Theory --> Visuals
     Theory --> Labs
     Labs --> Visuals
+```
 
 
 ---
