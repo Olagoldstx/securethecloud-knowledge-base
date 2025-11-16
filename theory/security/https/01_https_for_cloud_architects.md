@@ -99,6 +99,9 @@ sequenceDiagram
     S->>C: Finished
     C->>S: Encrypted HTTP requests
     S->>C: Encrypted HTTP responses
+```
+---
+
 9) Common Pitfalls
 Cert in wrong region (e.g., CloudFront requires certs in us‑east‑1).
 Terminate at edge but forget to re‑encrypt to backend.
