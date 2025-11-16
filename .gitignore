@@ -1,15 +1,3 @@
-**/.terraform/*
-*.tfstate
-*.tfstate.*
-.terraform.lock.hcl
-.crash
-.DS_Store
-.vscode/
-.idea/
-node_modules/
-dist/
-venv/
-
 # --- Terraform ---
 **/.terraform/*
 .terraform.lock.hcl
@@ -21,6 +9,26 @@ override.tf.json
 *_override.tf
 *_override.tf.json
 
+# --- Terragrunt ---
+.terragrunt-cache/
+
+# --- Local env files ---
+*.env
+.env.*
+.envrc
+
+# --- Editors/IDEs ---
+.vscode/
+.idea/
+*.swp
+
 # --- OS junk ---
 .DS_Store
 Thumbs.db
+
+# --- Python notebooks (if any) ---
+__pycache__/
+.ipynb_checkpoints/
+
+# --- Node (if any) ---
+node_modules/
