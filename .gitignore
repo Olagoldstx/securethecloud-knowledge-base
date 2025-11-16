@@ -32,3 +32,16 @@ __pycache__/
 
 # --- Node (if any) ---
 node_modules/
+
+# SecureTheCloud local env files
+labs/_env/*.env
+
+# Archives / exports
+*.zip
+*.tar.gz
+*.tgz
+
+# OS / IDE
+.DS_Store
+.vscode/
+.idea/
