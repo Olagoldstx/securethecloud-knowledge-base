@@ -1,0 +1,14 @@
+```mermaid
+flowchart LR
+    U[User / Browser]
+    CDN[CloudFront / Front Door / GCP CDN]
+    WAF[WAF / DDoS Protection]
+    LB[HTTPS Load Balancer]
+    APP[Secure App (EKS/AKS/GKE)]
+    DB[(Encrypted DB)]
+    SECRETS[KMS / Key Vault / Cloud KMS]
+
+    U -->|HTTPS| CDN --> WAF --> LB -->|mTLS| APP
+    APP -->|TLS| DB
+    APP --> SECRETS
+```
