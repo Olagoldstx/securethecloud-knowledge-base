@@ -9,3 +9,18 @@
 node_modules/
 dist/
 venv/
+
+# --- Terraform ---
+**/.terraform/*
+.terraform.lock.hcl
+*.tfstate
+*.tfstate.*
+crash.log
+override.tf
+override.tf.json
+*_override.tf
+*_override.tf.json
+
+# --- OS junk ---
+.DS_Store
+Thumbs.db
